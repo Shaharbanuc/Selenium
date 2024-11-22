@@ -34,7 +34,7 @@ public class DropDownTesting extends Base{
 		driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
 		//to print 1st row of table
 		List<WebElement> row1=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr[1]"));
-		//we cant directly print row1 coz it is list of web elements
+		//we can not directly print row1 coz it is list of web elements,so call getText
 		for (WebElement row : row1) {
             System.out.println(row.getText());
 		}
@@ -45,7 +45,7 @@ public class DropDownTesting extends Base{
 		driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
 		//to get all rows of table
 		List<WebElement> allrow=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr"));
-		//we cant directly print row1 coz it is list of web elements
+		//we cant directly print row1 coz it is list of web elements,so need to call getText
 		for (WebElement row : allrow) {
             // get all rows as list first using tr,
 			//Get all cells in the current row

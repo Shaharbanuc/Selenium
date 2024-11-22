@@ -13,7 +13,7 @@ import testscript.Base;
 
 public class FileUpload extends Base{
 	
-	public void sendKeys()
+	/*public void sendKeys()
 	{
 			driver.navigate().to("https://practice.expandtesting.com/upload#google_vignette");
 			WebElement selectpdf=driver.findElement(By.xpath("//input[@id='fileInput']"));
@@ -21,15 +21,15 @@ public class FileUpload extends Base{
 			selectpdf.sendKeys("C:\\Users\\shanu\\Downloads\\Booking.com_ Confirmation.pdf");
 			WebElement upload=driver.findElement(By.xpath("//button[@id='fileSubmit']"));
 			upload.click();
-	}
-	/*public void sendKeys()
+	}*/
+	public void sendKeys()
 	{
 	driver.navigate().to("https://practice.expandtesting.com/upload#google_vignette");
 	WebElement selectpdf=driver.findElement(By.xpath("//input[@id='fileInput']"));	
 	selectpdf.sendKeys("C:\\Users\\shanu\\Downloads\\Booking.com_ Confirmation.pdf");
 	WebElement upload=driver.findElement(By.xpath("//button[@id='fileSubmit']"));
 	upload.click();	
-	}*/
+	}
 	public void robotClass() throws AWTException
 	{
 		driver.navigate().to("https://www.ilovepdf.com/pdf_to_word");

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 
 import testscript.Base;
 
-public class SevenRMart extends Base{
+public class SevenRMartTest extends Base{
 	
 	public void logIn()
 	{
@@ -23,7 +23,7 @@ public class SevenRMart extends Base{
 
 	public static void main(String[] args) {
 		
-		SevenRMart seven=new SevenRMart();
+		SevenRMartTest seven=new SevenRMartTest();
 		seven.initializeBrowser();
 		seven.logIn();
 	}

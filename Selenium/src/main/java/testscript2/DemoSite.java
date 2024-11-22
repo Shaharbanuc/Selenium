@@ -1,7 +1,11 @@
 package testscript2;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import testscript.Base;
 
@@ -14,6 +18,9 @@ public class DemoSite extends Base {
 		WebElement elem1=driver.findElement(By.xpath("//input[@id='single-input-field']"));
 		elem1.sendKeys("shanu");
 		WebElement elem2=driver.findElement(By.xpath("//button[@id='button-one']"));
+		//explicit wait-that targets a specific element and condition.
+		WebDriverWait wait=new 	WebDriverWait(driver,Duration.ofSeconds(0));
+		wait.until(ExpectedConditions.elementToBeClickable(elem2));
 		elem2.click();
 		
 	}
